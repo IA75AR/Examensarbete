@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import StackNavigation from "./navigations/StackNavigation";
+import { Entypo } from '@expo/vector-icons';
 
-export default function App() {
+
+export default function App () {
+
+  //Simple debugging - delete before production
+  console.log("App executed");
+
+  const BottomTab = createBottomTabNavigator();
+
   return (
-    <View style={styles.container}>
-      <Text>First Commit!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <NavigationContainer>
+        <BottomTab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
+          <BottomTab.Screen
+            name="StackNavigation"
+            component={StackNavigation}
+            options={{tabBarIcon: () => <Entypo name="home" size={24} color="black" />}} 
+          />
+        </BottomTab.Navigator>
+      </NavigationContainer>
+    </>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
