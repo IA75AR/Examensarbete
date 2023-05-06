@@ -5,7 +5,7 @@ import LoggaTHRosa from "../assets/LoggaTHVit.png"
 
 export default function Home () {
 
-    //Home-screen
+    //"Home"-screen
   
     return (
         <>
