@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Entypo } from '@expo/vector-icons';
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import StackNavigation from "./navigations/StackNavigation";
@@ -9,6 +9,7 @@ import DansaMedOss from "./screens/DansaMedOss";
 import Dansklasser from "./screens/Dansklasser";
 import Fitness from "./screens/Fitness";
 import Event from "./screens/Event";
+import Home from "./screens/Home";
 
 
 export default function App () {
@@ -25,8 +26,9 @@ export default function App () {
             tabBarShowLabel: true, 
             headerShown: false, 
             tabBarActiveTintColor: "#ec008c", 
-            tabBarInactiveTintColor: "black"
-            
+            tabBarInactiveTintColor: "black",
+            tabBarStyle: { position: 'absolute', paddingTop: 10},
+            // Ikon rosa
             }}>
           <BottomTab.Screen
               name="StackNavigation"

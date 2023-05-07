@@ -1,18 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, StyleSheet, Text } from 'react-native';
-import KICKSTART from "../assets/KICKSTART.png"
-import LoggaTHRosa from "../assets/LoggaTHVit.png"
+import { View, Image, StyleSheet, Text, Pressable } from 'react-native';
+import { useNavigation } from "@react-navigation/native";
+import KICKSTART from "../assets/KICKSTART.png";
+import LoggaTHRosa from "../assets/LoggaTHVit.png";
+import MenyScreen from './MenyScreen';
 
 export default function Home () {
 
     //"Home"-screen
+
+    const navigation = useNavigation();
+
+    const handleChangeScreen = () => {
+        navigation.navigate("MenyScreen", { screen: {MenyScreen}})
+    }
   
     return (
         <>
             <View style={styles.container}>
-                <Image source={LoggaTHRosa} style={styles.imageTH} />
+                <Pressable onPress={handleChangeScreen}>
+                    <Image source={LoggaTHRosa} style={styles.imageTH} />
+                </Pressable>
                 <Text>_____________________________________</Text>
                 <Image source={KICKSTART} style={styles.imageKICKSTART} />
+                <Text style={styles.version}>Version: 10.0.20</Text>
                 <StatusBar style="dark" />
             </View>
         </>
@@ -25,13 +36,15 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#ec008c",
-        paddingTop: 50
+        paddingTop: 150
     }, imageTH: {
         height: 150,
         width: 250
     }, imageKICKSTART: {
         height: 200,
         width: 350
+    }, version: {
+        marginTop: 100
     }
 });
 

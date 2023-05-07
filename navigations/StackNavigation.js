@@ -1,7 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
+import MenyScreen from "../screens/MenyScreen";
 import DansaMedOss from "../screens/DansaMedOss";
 import Dansklasser from "../screens/Dansklasser";
+import Fitness from "../screens/Fitness";
 import Event from "../screens/Event";
 
 
@@ -13,9 +15,14 @@ export default function StackNavigation () {
     <>
         <stackNavigation.Navigator>
             <stackNavigation.Screen
-                options={{headerShown: false}}
+                options={{headerShown: false, tabBarShowLabel: false}}
                 name="Home"
                 component={Home}
+            />
+            <stackNavigation.Screen
+                options={{headerShown: false}}
+                name="MenyScreen"
+                component={MenyScreen}
             />
             <stackNavigation.Screen
                 options={{headerShown: false}}
@@ -26,6 +33,11 @@ export default function StackNavigation () {
                 options={{headerShown: false}}
                 name="Dansklasser"
                 component={Dansklasser}
+            />
+            <stackNavigation.Screen
+                options={{headerShown: false}}
+                name="Fitness"
+                component={Fitness}
             />
             <stackNavigation.Screen
                 options={{headerShown: false}}
