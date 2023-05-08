@@ -9,7 +9,7 @@ import DansaMedOss from "./screens/DansaMedOss";
 import Dansklasser from "./screens/Dansklasser";
 import Fitness from "./screens/Fitness";
 import Event from "./screens/Event";
-import Home from "./screens/Home";
+import ÅretsFöretagare from "./screens/ÅretsFöretagare";
 
 
 export default function App () {
@@ -28,7 +28,7 @@ export default function App () {
             tabBarActiveTintColor: "#ec008c", 
             tabBarInactiveTintColor: "black",
             tabBarStyle: { position: 'absolute', paddingTop: 10},
-            // Ikon rosa
+            // Ikon rosa, "hover"
             }}>
           <BottomTab.Screen
               name="StackNavigation"
@@ -36,7 +36,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Home", 
                 tabBarLabelPosition: "below-icon",
-                tabBarIcon: () => <Entypo name="home" size={24} />
+                tabBarIcon: () => <Entypo name="home" size={24}/>
               }}
           />
           <BottomTab.Screen
@@ -45,7 +45,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Dansa med oss!", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <Entypo name="slideshare" size={24} />
+                tabBarIcon: () => <Entypo name="slideshare" size={24}/>
               }}
           />
           <BottomTab.Screen
@@ -54,7 +54,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Dansklasser", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <AntDesign name="heart" size={24} />
+                tabBarIcon: () => <AntDesign name="heart" size={24}/>
               }}
           />
           <BottomTab.Screen
@@ -63,7 +63,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Fitness", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <MaterialIcons name="fitness-center" size={24} color="black" />
+                tabBarIcon: () => <MaterialIcons name="fitness-center" size={24}/>
               }}
           />
           <BottomTab.Screen
@@ -72,7 +72,16 @@ export default function App () {
               options={{
                 tabBarLabel: "Event", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <Entypo name="mic" size={24} />
+                tabBarIcon: () => <Entypo name="mic" size={24}/>
+              }}
+          />
+          <BottomTab.Screen
+              name="ÅretsFöretagare"
+              component={ÅretsFöretagare}
+              options={{
+                tabBarLabel: "Årets Företagare", 
+                tabBarLabelPosition:"below-icon", 
+                tabBarIcon: () => <Entypo name="star" size={24}/>
               }}
           />
         </BottomTab.Navigator>
