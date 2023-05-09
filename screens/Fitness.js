@@ -1,5 +1,4 @@
-import { StyleSheet, View, ScrollView, Text, Image, Pressable } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { StyleSheet, View, ScrollView, Text, Image, Pressable, Linking } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import KICKSTARTVit from "../assets/KICKSTART/KICKSTARTVit.png";
 import Team1 from "../assets/KICKSTART/Team1.png";
@@ -19,15 +18,15 @@ export default function Fitness () {
     //"Fitness"-screen
 
     const handlePressFB = () => {
-        //url=(https://www.facebook.com/kickstart.shakeit/)
+        Linking.openURL("https://www.facebook.com/kickstart.shakeit/")
     }
 
     const handlePressInsta = () => {
-        //url=(https://www.instagram.com/kickstart.shakeit/)
+        Linking.openURL("https://www.instagram.com/kickstart.shakeit/")
     }
 
     const handlePressAnmälan = () => {
-
+        Linking.openURL("http://thehousedancestudio.se/flv_portfolio/anmal-kickstart-vt-23/")
     }
   
     return (
