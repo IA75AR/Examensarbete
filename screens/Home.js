@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, StyleSheet, Text, Pressable } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
-import KICKSTART from "../assets/KICKSTART.png";
-import LoggaTHRosa from "../assets/LoggaTHVit.png";
+import KICKSTART from "../assets/KICKSTART/KICKSTART.png";
+import LoggaTHRosa from "../assets/theHouse/LoggaTHVit.png";
 import MenyScreen from './MenyScreen';
 import Fitness from './Fitness';
 

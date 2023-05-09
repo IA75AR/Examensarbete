@@ -1,15 +1,15 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Image } from "@expo/vector-icons"
 import { Entypo } from '@expo/vector-icons';
-import { StyleSheet, View } from "react-native";
-import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import StackNavigation from "./navigations/StackNavigation";
 import DansaMedOss from "./screens/DansaMedOss";
 import Dansklasser from "./screens/Dansklasser";
 import Fitness from "./screens/Fitness";
 import Event from "./screens/Event";
-import ÅretsFöretagare from "./screens/ÅretsFöretagare";
 
 
 export default function App () {
@@ -23,12 +23,12 @@ export default function App () {
     <>
       <NavigationContainer>
         <BottomTab.Navigator screenOptions={{
-            tabBarShowLabel: true, 
-            headerShown: false, 
+            tabBarShowLabel: false, 
+            headerShown: false,
             tabBarActiveTintColor: "#ec008c", 
             tabBarInactiveTintColor: "black",
             tabBarStyle: { position: 'absolute', paddingTop: 10},
-            // Ikon rosa, "hover"
+            // Ikon rosa, "hover", ta bort bottomtab Home
             }}>
           <BottomTab.Screen
               name="StackNavigation"
@@ -36,7 +36,19 @@ export default function App () {
               options={{
                 tabBarLabel: "Home", 
                 tabBarLabelPosition: "below-icon",
-                tabBarIcon: () => <Entypo name="home" size={24}/>
+                navigationOptions: () => {
+                  return {
+                    tabBarIcon: ({ tintColor }) => {
+                      let soureImage;
+                      if (tintColor == "#ec008c") {
+                        soureImage = "Home"
+                      } else {
+                        soureImage = "HomeActive"
+                      }
+                      return <Image name={soureImage} size={24} color={tintColor}/>
+                    }
+                  }
+                }
               }}
           />
           <BottomTab.Screen
@@ -45,7 +57,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Dansa med oss!", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <Entypo name="slideshare" size={24}/>
+                tabBarIcon: () => <MaterialCommunityIcons name="human-female-dance" size={28} />
               }}
           />
           <BottomTab.Screen
@@ -54,7 +66,7 @@ export default function App () {
               options={{
                 tabBarLabel: "Dansklasser", 
                 tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <AntDesign name="heart" size={24}/>
+                tabBarIcon: () => <FontAwesome name="heart" size={24} />
               }}
           />
           <BottomTab.Screen
@@ -75,23 +87,8 @@ export default function App () {
                 tabBarIcon: () => <Entypo name="mic" size={24}/>
               }}
           />
-          <BottomTab.Screen
-              name="ÅretsFöretagare"
-              component={ÅretsFöretagare}
-              options={{
-                tabBarLabel: "Årets Företagare", 
-                tabBarLabelPosition:"below-icon", 
-                tabBarIcon: () => <Entypo name="star" size={24}/>
-              }}
-          />
         </BottomTab.Navigator>
       </NavigationContainer>
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-      backgroundColor: "black",
-  }
-});
