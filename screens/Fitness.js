@@ -1,6 +1,7 @@
 import { StyleSheet, View, ScrollView, Text, Image, Pressable, Linking } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import KICKSTARTVit from "../assets/KICKSTART/KICKSTARTVit.png";
+import KICKSTART from "../assets/KICKSTART/KICKSTART.png";
 import Team1 from "../assets/KICKSTART/Team1.png";
 import VTT from "../assets/KICKSTART/VTT.png"
 import PeopleTräning from "../assets/KICKSTART/PeopleTräning.png"
@@ -10,6 +11,9 @@ import ShakeAndDrum from "../assets/KICKSTART/ShakeAndDrum.png"
 import Disco from "../assets/KICKSTART/Disco.png"
 import Buggaloo from "../assets/KICKSTART/Buggaloo.png"
 import HipHop from "../assets/KICKSTART/HipHop.png"
+import Instagram from "../assets/theHouse/Instagram.png"
+import Tiktok from "../assets/theHouse/Tiktok.png"
+import KnappAnmälDigHär from "../assets/theHouse/KnappAnmälDigHär.png"
 import ListaKickstart from "../components/ListaKickstart";
 
 
@@ -28,6 +32,11 @@ export default function Fitness () {
     const handlePressAnmälan = () => {
         Linking.openURL("http://thehousedancestudio.se/flv_portfolio/anmal-kickstart-vt-23/")
     }
+
+    const handlePressLänkHemsidan = () => {
+        Linking.openURL("https://www.thehousedancestudio.se/kickstart/")
+    }
+
   
     return (
         <>
@@ -40,20 +49,19 @@ export default function Fitness () {
                         </View>
                         <View>
                             <Text style={styles.text1}>Behöver du en rejäl NYSTART & KICK vad gäller både din mentala som fysiska träning och hälsa? Hösten 2020 startade vi fitnesskoncepetet KICKSTART! Det blev succé med fulla team!</Text>
-                            <Text style={styles.text2}>Mer information och NYHETER finns på Facebook & instagram @kickstart.shakeit</Text>
+                            <Text style={styles.text2}>Mer information och NYHETER finns på Facebook & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
                         </View>
                     </View>
                     <View style={styles.medier}>
+                        <Pressable onPress={handlePressLänkHemsidan}>
+                            <Image source={KICKSTART} style={styles.buttonKickstart}></Image>
+                        </Pressable>
+                        <Pressable onPress={handlePressInsta}>
+                            <Image source={Instagram} style={styles.instagram}></Image>
+                        </Pressable>
                         <FontAwesome.Button 
                             name="facebook-f" 
-                            backgroundColor="black" 
                             onPress={handlePressFB}
-                        >
-                        </FontAwesome.Button>
-                        <FontAwesome.Button 
-                            name="instagram" 
-                            backgroundColor="black" 
-                            onPress={handlePressInsta}
                         >
                         </FontAwesome.Button>
                     </View>
@@ -63,12 +71,16 @@ export default function Fitness () {
                         </View>
                     </View>
                     <ListaKickstart/>
-                    <Pressable
-                        onPress={handlePressAnmälan}
-                        style={styles.anmälDigHär}>
-                        <Text>ANMÄL DIG HÄR!</Text>
-                    </Pressable>
+                    <View>
+                        <Pressable
+                            onPress={handlePressAnmälan}
+                            style={styles.containerColumn}
+                        >
+                        <Image source={KnappAnmälDigHär} style={styles.imageAnmälDigHär}></Image>
+                        </Pressable>
+                    </View>
                     <View style={styles.containerColumn}>
+                        <Image source={LPVit} style={styles.LP} />
                         <Image source={LPVit} style={styles.LP} />
                         <Image source={LPVit} style={styles.LP} />
                         <Image source={LPVit} style={styles.LP} />
@@ -122,10 +134,10 @@ export default function Fitness () {
                         <Text style={styles.text1}>________________________________</Text>
                         <View style={styles.containerColumn}>
                             <Text style={styles.text1}>För mer information:                            0733-114 114 @The House</Text>
-                            <Text style={styles.text1}>_________________________________</Text>
                             <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} />
+                            <Text style={styles.text1}></Text>
                         </View>
-                        <Text style={styles.text1}>_________________________________</Text>
+                        <Text style={styles.text1}> _________________________________</Text>
                     </View>
                 </ScrollView>
             </View>
@@ -161,6 +173,10 @@ const styles = StyleSheet.create({
         marginBottom: 70,
         width: 300,
         height: 150
+    }, instagram: {
+        marginRight: 20,
+        width: 40,
+        height: 40
     }, imageTeam1: {
         flex: 1,
         alignItems: "center",
@@ -177,6 +193,29 @@ const styles = StyleSheet.create({
         marginTop: -50,
         width: 317,
         height: 220
+    }, imageAnmälDigHär: {
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "white",
+        width: 335,
+        height: 60,
+        borderRadius: 10,
+        borderColor: "white",
+        marginBottom: 30,
+        marginTop: 30
+    }, buttonKickstart: {
+        backgroundColor: "white",
+        color: "black",
+        marginBottom: 20,
+        marginLeft: 7,
+        marginRight: 20,
+        marginTop: 20,
+        paddingTop: 5,
+        width: 100,
+        height: 40,
+        borderRadius: 10
     }, rubrik1: {
         fontFamily: "Avenir",
         fontSize: 20,
@@ -210,7 +249,7 @@ const styles = StyleSheet.create({
         marginLeft: 40,
         marginRight: 35,
         padding: 15,
-        borderRadius: 10,
+        borderRadius: 10
     }, text1: {
         fontFamily: "Avenir",
         fontSize: 18,
@@ -218,7 +257,7 @@ const styles = StyleSheet.create({
         color: "white",
         marginTop: 15,
         marginBottom: 20,
-        marginLeft: 40,
+        marginLeft: 39,
         marginRight: 35
     }, text2: {
         fontFamily: "Avenir",
@@ -228,12 +267,24 @@ const styles = StyleSheet.create({
         marginLeft: 40,
         marginRight: 35,
         marginTop: 20 
+    }, text3: {
+        fontFamily: "Avenir",
+        backgroundColor: "white",
+        color: "black",
+        marginBottom: 20,
+        marginLeft: 7,
+        marginRight: 20,
+        marginTop: 20,
+        padding: 11,
+        borderRadius: 10
     }, medier: {
         flex: 1,
         flexDirection: "row",
+        alignItems: "center",
         marginLeft: 35,
         marginBottom: 20,
-        maxWidth: 50
+        maxWidth: 150,
+        borderRadius: 10
     }, LP: {
         flex: 1,
         flexDirection: "column",
