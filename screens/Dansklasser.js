@@ -204,7 +204,7 @@ export default function Dansklasser () {
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
                             <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} />
-                            <Text style={styles.text2}>© The House Dance Studio & Events AB</Text>
+                            <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> ___________________________________</Text>
                     </View>

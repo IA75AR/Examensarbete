@@ -136,7 +136,7 @@ export default function Fitness () {
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
                             <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} />
-                            <Text style={styles.text2}>© The House Dance Studio & Events AB</Text>
+                            <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> _________________________________</Text>
                     </View>
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
         fontFamily: "Avenir",
         backgroundColor: "black",
         color: "white",
-        marginBottom: 20,
+        marginBottom: 40,
         marginLeft: 40,
         marginRight: 35,
         marginTop: 20 
