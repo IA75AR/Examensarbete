@@ -7,11 +7,10 @@ import IngelaMarie from "../assets/theHouse/IngelaMarie.png"
 import Tjustgalan from "../assets/theHouse/Tjustgalan.png"
 import Instagram from "../assets/theHouse/Instagram.png"
 
+export default function ÅretsFöretagare () {
 
-export default function Event () {
-
-    //"Event"-screen
-
+    //"ÅretsFöretagare"-screen
+  
     const handlePressFB = () => {
         Linking.openURL("https://www.facebook.com/thehousedancestudio/")
     }

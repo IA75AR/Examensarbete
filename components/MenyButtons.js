@@ -4,7 +4,7 @@ import DansaMedOss from "../screens/DansaMedOss";
 import Dansklasser from "../screens/Dansklasser";
 import Fitness from "../screens/Fitness";
 import Event from "../screens/Event";
-import ÅretsFöretagare from "../screens/ÅretsFöretagare";
+import ÅretsFöretagare from "../screens/AretsForetagare";
 import KnappDansaMedOss from "../assets/theHouse/KnappDansaMedOss.png"
 import KnappDansklasser from "../assets/theHouse/KnappDansklasser.png"
 import KnappFitness from "../assets/theHouse/KnappFitness.png"
@@ -97,6 +97,8 @@ const styles = StyleSheet.create({
         height: 40,
         borderRadius: 10,
         marginTop: -100,
-        marginBottom: 150
+        marginBottom: 150,
+        borderColor: "black",
+        borderWidth: 1
     }
 });
