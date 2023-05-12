@@ -12,7 +12,6 @@ import Disco from "../assets/KICKSTART/Disco.png"
 import Buggaloo from "../assets/KICKSTART/Buggaloo.png"
 import HipHop from "../assets/KICKSTART/HipHop.png"
 import Instagram from "../assets/theHouse/Instagram.png"
-import Tiktok from "../assets/theHouse/Tiktok.png"
 import KnappAnmälDigHär from "../assets/theHouse/KnappAnmälDigHär.png"
 import ListaKickstart from "../components/ListaKickstart";
 
@@ -49,21 +48,7 @@ export default function Fitness () {
                         </View>
                         <View>
                             <Text style={styles.text1}>Behöver du en rejäl NYSTART & KICK vad gäller både din mentala som fysiska träning och hälsa? Hösten 2020 startade vi fitnesskoncepetet KICKSTART! Det blev succé med fulla team!</Text>
-                            <Text style={styles.text2}>Mer information och NYHETER finns på Facebook & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
                         </View>
-                    </View>
-                    <View style={styles.medier}>
-                        <Pressable onPress={handlePressLänkHemsidan}>
-                            <Image source={KICKSTART} style={styles.buttonKickstart}></Image>
-                        </Pressable>
-                        <Pressable onPress={handlePressInsta}>
-                            <Image source={Instagram} style={styles.instagram}></Image>
-                        </Pressable>
-                        <FontAwesome.Button 
-                            name="facebook-f" 
-                            onPress={handlePressFB}
-                        >
-                        </FontAwesome.Button>
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageKICKSTART}>
@@ -125,17 +110,33 @@ export default function Fitness () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={HipHop} style={styles.LPPassbeskrivning} />
+                                <Image source={HipHop} style={styles.LPPassbeskrivningHipHop} />
                             </View>
                             <Text style={styles.text1}>Ett grymt fitnesspass för ben, rumpa och lår!</Text>
                             <Text style={styles.text2}>Fitnesspasset Hip-Hop Fitness fokuserar på att bygga en stark kropp till skön Hip-Hop-musik. Stilen är något lugnare än The House andra fitnesspass, men fortfarande ett pass där pulsen ökar och musklerna jobbar maximalt. Här jobbar vi lågt nere och maxar musklerna, framför allt i ben, rumpa och lår. Johan Carlsson är över 50 år, flerbarnsfarsa och älskar Hip-Hop Fitness! Det är aldrig försent att röra sig till sköna rytmer, och det är framför allt aldrig försent att ha roligt! Så nu kör vi... YO-YO!</Text>
                             <Text style={styles.text1}>Fokus: Styrka rumpa & lår</Text>
                         </View>
                         <Text style={styles.text1}>________________________________</Text>
+                        <View>
+                            <Text style={styles.text2}>Mer information och NYHETER finns på FB & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
+                        </View>
+                        <View style={styles.medier}>
+                            <Pressable onPress={handlePressLänkHemsidan}>
+                                <Image source={KICKSTART} style={styles.buttonKickstart}></Image>
+                            </Pressable>
+                            <Pressable onPress={handlePressInsta}>
+                                <Image source={Instagram} style={styles.instagram}></Image>
+                            </Pressable>
+                            <FontAwesome.Button 
+                                name="facebook-f" 
+                                onPress={handlePressFB}
+                            >
+                            </FontAwesome.Button>
+                        </View>
+                        <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Text style={styles.text1}>För mer information:                            0733-114 114 @The House</Text>
                             <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} />
-                            <Text style={styles.text1}></Text>
+                            <Text style={styles.text2}>© The House Dance Studio & Events AB</Text>
                         </View>
                         <Text style={styles.text1}> _________________________________</Text>
                     </View>
@@ -170,7 +171,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: 70,
         width: 300,
         height: 150
     }, instagram: {
@@ -255,8 +255,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         backgroundColor: "black",
         color: "white",
-        marginTop: 15,
-        marginBottom: 20,
+        marginBottom: 30,
         marginLeft: 39,
         marginRight: 35
     }, text2: {
@@ -299,10 +298,18 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 10,
-        marginBottom: 20,
+        marginTop: 20,
+        marginBottom: 40,
         width: 210,
-        height: 210
+        height: 215
+    }, LPPassbeskrivningHipHop: {
+        flex: 1,
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 20,
+        marginBottom: 40,
+        width: 220,
+        height: 215
     }
 });
-

@@ -3,7 +3,6 @@ import { FontAwesome } from '@expo/vector-icons';
 import LoggaTHVit from "../assets/theHouse/LoggaTHVit.png";
 import Instagram from "../assets/theHouse/Instagram.png";
 import Tiktok from "../assets/theHouse/Tiktok.png";
-import Dansare from  "../assets/theHouse/Dansare.png"
 import Dansare1 from "../assets/theHouse/Dansare1.png"
 import Dansare2 from "../assets/theHouse/Dansare2.png"
 import LPGul from "../assets/theHouse/LPGul.png";
@@ -11,6 +10,7 @@ import LPRosa from "../assets/theHouse/LPRosa.png";
 import LPMint from "../assets/theHouse/LPMint.png";
 import LPOrange from "../assets/theHouse/LPOrange.png";
 import KnappAnmälDigHär from "../assets/theHouse/KnappAnmälDigHär.png";
+import RubrikDansklasser from "../assets/theHouse/RubrikDansklasser.png";
 import Sagovärlden from "../assets/theHouse/Sagovärlden.png";
 import Princess from "../assets/theHouse/Princess.png";
 import THK from "../assets/theHouse/THK.png";
@@ -60,10 +60,7 @@ export default function Dansklasser () {
                             <Image source={Dansare1} style={styles.imageDansare1} />
                     </View>
                     <View style={styles.containerColumn}>
-                        <Text style={styles.rubrik1}>DANSKLASSER</Text>
-                    </View>
-                    <View style={styles.imageLoggaTH}>
-                            <Image source={Dansare} style={styles.imageDansare} />
+                        <Image source={RubrikDansklasser} style={styles.imageAnmälDigHär}></Image>
                     </View>
                     <View>
                         <Pressable
@@ -73,23 +70,16 @@ export default function Dansklasser () {
                         <Image source={KnappAnmälDigHär} style={styles.imageAnmälDigHär}></Image>
                         </Pressable>
                     </View>
-
-
-
-
-
-                    
-
                     <View style={styles.containerColumn}>
                         <Image source={LPGul} style={styles.LP} />
                         <Image source={LPRosa} style={styles.LP} />
+                        <View style={styles.containerColumn}>
+                            <View style={styles.imageKICKSTART}>
+                                <Image source={Dansare2} style={styles.imageDansare2} />
+                            </View>
+                        </View>
                         <Image source={LPOrange} style={styles.LP} />
                         <Image source={LPMint} style={styles.LP} />
-                    </View>
-                    <View style={styles.containerColumn}>
-                        <View style={styles.imageKICKSTART}>
-                            <Image source={Dansare2} style={styles.imageDansare2} />
-                        </View>
                     </View>
                     <View>
                         <View>
@@ -211,10 +201,10 @@ export default function Dansklasser () {
                                 <Image source={Tiktok} style={styles.tiktok}></Image>
                             </Pressable>
                         </View>
+                        <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Text style={styles.text1}>För mer information:                            0733-114 114 @The House</Text>
                             <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} />
-                            <Text style={styles.text1}></Text>
+                            <Text style={styles.text2}>© The House Dance Studio & Events AB</Text>
                         </View>
                         <Text style={styles.text1}> ___________________________________</Text>
                     </View>
@@ -250,7 +240,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: 70,
+        marginTop: 40,
         width: 300,
         height: 150
     }, instagram: {
@@ -263,8 +253,6 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40
     }, buttonTH: {
-        backgroundColor: "white",
-        color: "black",
         marginBottom: 20,
         marginLeft: 7,
         marginRight: 20,
@@ -277,22 +265,23 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         marginLeft: 80,
-        marginTop: -200,
-        marginBottom: -40,
-        width: 400
+        marginTop: -100,
+        marginBottom: -20,
+        width: 370
     }, imageDansare1: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
         marginLeft: 80,
         marginTop: -150,
-        width: 250
+        width: 270
     }, imageDansare2: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 10,
-        marginTop: -10,
+        marginTop: 20,
+        marginBottom: 20,
         width: 320,
         height: 220
     }, rubrik1: {
@@ -314,7 +303,7 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 10,
         borderColor: "white",
-        marginBottom: 30,
+        marginBottom: 60,
         marginTop: -40
     }, text1: {
         fontFamily: "Avenir",
