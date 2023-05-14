@@ -12,7 +12,7 @@ export default function ÅretsFöretagare () {
     //"ÅretsFöretagare"-screen
   
     const handlePressFB = () => {
-        Linking.openURL("https://www.facebook.com/thehousedancestudio/")
+        Linking.openURL("https://www.facebook.com/thehousedancestudio/");
     }
 
     const handlePressInsta = () => {

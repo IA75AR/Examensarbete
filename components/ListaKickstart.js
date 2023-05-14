@@ -1,23 +1,16 @@
-import { View, FlatList, Text, StyleSheet } from "react-native";
+import { View, SectionList, Text, StyleSheet } from "react-native";
 
 export default function ListaKickstart () {
 
     return (
         <>
-            <View>
-                <View>
-                    <FlatList
-                        data={[
-                        {key: "Härlig gruppträning!"},
-                        {key: "Schlagerpuls, Shake & Drum, Buggaloo m fl"},
-                        {key: "Effektiv styrka i gruppträning"},
-                        {key: "PT-timma"},
-                        {key: "Goodiebag"},
-                        {key: "#VägraTråkigTräning"}
-                        ]}
-                        renderItem={({item}) => <Text style={styles.text1}>{`\u29BF ${item.key}`}</Text>}
-                    />
-                </View>
+            <View style={styles.container}>
+                <Text style={styles.text1}>🔘   Härlig gruppträning!</Text> 
+                <Text style={styles.text1}>🔘   Schlagerpuls, Shake & Drum, Buggaloo m fl</Text> 
+                <Text style={styles.text1}>🔘   Effektiv styrka i gruppträning</Text> 
+                <Text style={styles.text1}>🔘   PT-timma</Text> 
+                <Text style={styles.text1}>🔘   Goodiebag</Text> 
+                <Text style={styles.text1}>🔘   #VägraTråkigTräning"</Text> 
             </View>
         </>
     );

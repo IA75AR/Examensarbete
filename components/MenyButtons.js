@@ -4,7 +4,7 @@ import DansaMedOss from "../screens/DansaMedOss";
 import Dansklasser from "../screens/Dansklasser";
 import Fitness from "../screens/Fitness";
 import Event from "../screens/Event";
-import ÅretsFöretagare from "../screens/AretsForetagare";
+import AretsForetagare from "../screens/AretsForetagare";
 import KnappDansaMedOss from "../assets/theHouse/KnappDansaMedOss.png"
 import KnappDansklasser from "../assets/theHouse/KnappDansklasser.png"
 import KnappFitness from "../assets/theHouse/KnappFitness.png"
@@ -36,7 +36,7 @@ export default function MenyButtons () {
     }
 
     const handlePressÅretsFöretagare = () => {
-        navigation.navigate("ÅretsFöretagare", { screen: {ÅretsFöretagare}})
+        navigation.navigate("AretsForetagare", { screen: {AretsForetagare}})
     }
 
     const handlePressGoBack = () => {

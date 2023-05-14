@@ -1,11 +1,11 @@
 import { StyleSheet, View, ScrollView, Text, Image, Pressable, Linking } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import LoggaTHVit from "../assets/theHouse/LoggaTHVit.png";
-import AretsForetagare from "../assets/theHouse/AretsForetagare.png"
-import Blommor from "../assets/theHouse/Blommor.png"
-import IngelaMarie from "../assets/theHouse/IngelaMarie.png"
-import Tjustgalan from "../assets/theHouse/Tjustgalan.png"
+import DavidLindgren from "../assets/theHouse/DavidLindgren.png"
+import Sparbanksdagen from "../assets/theHouse/Sparbanksdagen.png"
+import RubrikEvent from "../assets/theHouse/RubrikEvent.png"
 import Instagram from "../assets/theHouse/Instagram.png"
+import ListaEvent from "../components/ListaEvent";
 
 
 export default function Event () {
@@ -29,23 +29,23 @@ export default function Event () {
             <View style={styles.containerColumn}>
                 <ScrollView>
                     <View style={styles.containerColumn}>
-                        <View style={styles.imageÅretsFöretagare}>
-                            <Image source={AretsForetagare} style={styles.imageÅretsFöretagare} />
+                        <View style={styles.imageDavidLindgren}>
+                            <Image source={DavidLindgren} style={styles.imageDavidLindgren} />
                         </View>
                         <View>
-                            <Text style={styles.text1}>År 2018 blev Ingela Arrbrant, grundaren av The House Dance Studio & Events AB, på Tjustgalan utnämnd till Årets Företagare med följande motivering:</Text>
-                            <Text style={styles.text2}>”Sedan i ung ålder visat sitt engagemang i dans och träning. Äger och driver nu The House med verksamhet på flera ben. Tar ett samhällsansvar genom sitt arbete med att tillfredsställa människors välbefinnande genom dans som träning. Detta görs bl a genom ett fullt utvecklat eget koncept som används över hela landet med den lokala förankringen i Västervik samt genom gedigen erfarenhet av event både nationellt och internationellt."</Text>                        
+                            <Text style={styles.text1}>Efter lång erfarenhet av att driva och producera event i Sverige och utomlands ser The House nu fram emot att göra samma sak här i Västervik. Företagsfester, galor, modeshower, stadsfestivaler, idrottsevenemang, happenings och föreställningar är några av de projekt som vi varit inblandade i tidigare.</Text>
                         </View>
-                    </View>
-                    <View style={styles.containerColumn}>
-                        <View style={styles.imageBlommor}>
-                            <Image source={Blommor} style={styles.imageBlommor} />
+                        <View style={styles.containerColumn}>
+                            <Image source={RubrikEvent} style={styles.imageAnmälDigHär}></Image>
                         </View>
-                        <View style={styles.imageÅretsFöretagare}>
-                            <Image source={IngelaMarie} style={styles.imageBlommor} />
+                        <View>
+                            <ListaEvent/>
+                            <Text style={styles.text1}>Är ni intresserade av att veta mer eller skicka en förfrågan är ni välkomna att maila oss på info@thehousedancestudio.se</Text>
                         </View>
-                        <View style={styles.imageBlommor}>
-                            <Image source={Tjustgalan} style={styles.imageBlommor} />
+                        <View style={styles.containerColumn}>
+                            <View style={styles.imageBlommor}>
+                                <Image source={Sparbanksdagen} style={styles.imageBlommor} />
+                            </View>
                         </View>
                     </View>
                     <View>
@@ -86,14 +86,14 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "black"
-    }, imageÅretsFöretagare: {
+    }, imageDavidLindgren: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
         marginTop: 50,
         marginBottom: 10,
         width: 300,
-        height: 250,
+        height: 270,
         borderRadius: 10
     }, imageTHfooter: {
         flex: 1,

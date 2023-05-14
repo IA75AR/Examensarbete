@@ -5,7 +5,7 @@ import DansaMedOss from "../screens/DansaMedOss";
 import Dansklasser from "../screens/Dansklasser";
 import Fitness from "../screens/Fitness";
 import Event from "../screens/Event";
-import ÅretsFöretagare from "../screens/AretsForetagare";
+import AretsForetagare from "../screens/AretsForetagare";
 
 
 export default function StackNavigation () {
@@ -47,8 +47,8 @@ export default function StackNavigation () {
             />
             <stackNavigation.Screen
                 options={{headerShown: false}}
-                name="ÅretsFöretagare"
-                component={ÅretsFöretagare}
+                name="AretsForetagare"
+                component={AretsForetagare}
             />
         </stackNavigation.Navigator>
     </>

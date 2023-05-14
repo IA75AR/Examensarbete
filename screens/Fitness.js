@@ -4,6 +4,7 @@ import KICKSTARTVit from "../assets/KICKSTART/KICKSTARTVit.png";
 import KICKSTART from "../assets/KICKSTART/KICKSTART.png";
 import Team1 from "../assets/KICKSTART/Team1.png";
 import VTT from "../assets/KICKSTART/VTT.png"
+import Nominering from "../assets/theHouse/Nominering.png"
 import PeopleTräning from "../assets/KICKSTART/PeopleTräning.png"
 import LPVit from "../assets/KICKSTART/LPVit.png";
 import Schlagerpuls from "../assets/KICKSTART/Schlagerpuls.png"
@@ -63,6 +64,11 @@ export default function Fitness () {
                         >
                         <Image source={KnappAnmälDigHär} style={styles.imageAnmälDigHär}></Image>
                         </Pressable>
+                    </View>
+                    <View style={styles.containerColumn}>
+                        <View style={styles.imageKICKSTART}>
+                            <Image source={Nominering} style={styles.imageNominering} />
+                        </View>
                     </View>
                     <View style={styles.containerColumn}>
                         <Image source={LPVit} style={styles.LP} />
@@ -193,6 +199,14 @@ const styles = StyleSheet.create({
         marginTop: -50,
         width: 317,
         height: 220
+    }, imageNominering: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 10,
+        marginTop: -150,
+        width: 317,
+        height: 220
     }, imageAnmälDigHär: {
         flex: 1,
         flexDirection: "column",
@@ -203,7 +217,7 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 10,
         borderColor: "white",
-        marginBottom: 30,
+        marginBottom: 160,
         marginTop: 30
     }, buttonKickstart: {
         backgroundColor: "white",
