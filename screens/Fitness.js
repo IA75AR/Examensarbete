@@ -122,6 +122,8 @@ export default function Fitness () {
                             <Text style={styles.text2}>Fitnesspasset Hip-Hop Fitness fokuserar på att bygga en stark kropp till skön Hip-Hop-musik. Stilen är något lugnare än The House andra fitnesspass, men fortfarande ett pass där pulsen ökar och musklerna jobbar maximalt. Här jobbar vi lågt nere och maxar musklerna, framför allt i ben, rumpa och lår. Johan Carlsson är över 50 år, flerbarnsfarsa och älskar Hip-Hop Fitness! Det är aldrig försent att röra sig till sköna rytmer, och det är framför allt aldrig försent att ha roligt! Så nu kör vi... YO-YO!</Text>
                             <Text style={styles.text1}>Fokus: Styrka rumpa & lår</Text>
                         </View>
+                    </View>
+                    <View>
                         <Text style={styles.text1}>________________________________</Text>
                         <View>
                             <Text style={styles.text2}>Mer information och NYHETER finns på FB & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
