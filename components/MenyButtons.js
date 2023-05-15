@@ -97,8 +97,6 @@ const styles = StyleSheet.create({
         height: 40,
         borderRadius: 10,
         marginTop: -100,
-        marginBottom: 150,
-        borderColor: "black",
-        borderWidth: 1
+        marginBottom: 90
     }
 });
