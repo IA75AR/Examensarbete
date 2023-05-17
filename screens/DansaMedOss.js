@@ -1,11 +1,11 @@
 import { StyleSheet, View, Text, Image, ScrollView, Pressable } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
-import Sagovärlden from "../assets/theHouse/Sagovärlden.png"
-import Princess from "../assets/theHouse/Princess.png"
-import THK from "../assets/theHouse/THK.png"
+import RubrikDansaMedOss from "../assets/theHouse/RubrikDansaMedOss.png"
+import DansaMedOssRebecca from "../assets/theHouse/DansaMedOssRebecca.png"
 import LoggaTHVit from "../assets/theHouse/LoggaTHVit.png"
 import Instagram from "../assets/theHouse/Instagram.png"
 import Tiktok from "../assets/theHouse/Tiktok.png"
+import FetchMovies from "../components/FetchMovies";
 
 export default function DansaMedOss () {
 
@@ -32,32 +32,14 @@ export default function DansaMedOss () {
             <View style={styles.containerColumn}>
                 <ScrollView>
                     <View>
-                        <View>
-                            <View style={styles.containerColumn}>
-                                <Image source={Sagovärlden} style={styles.ImageDansklasser} />
-                            </View>
-                            <Text style={styles.text2}>En dansklass för de allra minsta. Välkommen in i en sagovärld där vi på ett lekfullt sätt drömmer oss bort bland musiken, dansen och alla sagoböckerna. MNRI är viktigt för oss, det genomsyrar alla våra dansklasser. Våra älskade barn, hos oss är tryggheten viktig. #duäraldrigensam</Text>
-                            <Text style={styles.text1}>FAKTA</Text>
-                            <Text style={styles.text2}>Nivå: Nybörjare</Text>
-                            <Text style={styles.text2}>Ålder: 3 – 4 år</Text>
+                         <View style={styles.containerColumn}>
+                            <Image source={RubrikDansaMedOss} style={styles.rubrikDansaMedOss}></Image>
+                        </View>
+                        <View style={styles.containerColumn}>
+                            <Image source={DansaMedOssRebecca} style={styles.movieDansaMedOss} />
                         </View>
                         <View>
-                            <View style={styles.containerColumn}>
-                                <Image source={Princess} style={styles.ImageDansklasser} />
-                            </View>
-                            <Text style={styles.text2}>Älskar du att dansa och drömmer om att vara prinsessa för en dag? Välkommen till en dansklass där drömmar slår in, där du får glittra och skina som just DU kan!</Text>
-                            <Text style={styles.text1}>FAKTA</Text>
-                            <Text style={styles.text2}>Nivå: Nybörjare</Text>
-                            <Text style={styles.text2}>Ålder: 3 – 6 år</Text>
-                        </View>
-                        <View>
-                            <View style={styles.containerColumn}>
-                                <Image source={THK} style={styles.ImageDansklasser} />
-                            </View>
-                            <Text style={styles.text2}>Välkommen till en klass där vi dansar loss till musiken och får testa på massor av olika stilar. En av våra absolut populäraste klasser!</Text>
-                            <Text style={styles.text1}>FAKTA</Text>
-                            <Text style={styles.text2}>Nivå: Nybörjare</Text>
-                            <Text style={styles.text2}>Ålder: 5 – 7 år</Text>
+                            <FetchMovies/>
                         </View>
                     </View>
                     <View>
@@ -118,7 +100,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginLeft: 40,
         marginRight: 35
-    }, ImageDansklasser: {
+    }, movieDansaMedOss: {
         flex: 1,
         flexDirection: "column",
         alignItems: "center",
@@ -126,8 +108,20 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         marginTop: 30,
         marginBottom: 20,
-        width: 310,
-        height: 300
+        width: 330,
+        height: 300,
+        borderRadius: 10
+    }, rubrikDansaMedOss: {
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "white",
+        width: 335,
+        height: 60,
+        borderRadius: 10,
+        borderColor: "white",
+        marginTop: 100
     }, medier: {
         flex: 1,
         flexDirection: "row",
