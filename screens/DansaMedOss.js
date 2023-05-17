@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, Image, ScrollView, Pressable } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import RubrikDansaMedOss from "../assets/theHouse/RubrikDansaMedOss.png"
-import DansaMedOssRebecca from "../assets/theHouse/DansaMedOssRebecca.png"
+import DansaMedOssBecca2 from "../assets/theHouse/DansaMedOssBecca2.png"
 import LoggaTHVit from "../assets/theHouse/LoggaTHVit.png"
 import Instagram from "../assets/theHouse/Instagram.png"
 import Tiktok from "../assets/theHouse/Tiktok.png"
@@ -36,7 +36,7 @@ export default function DansaMedOss () {
                             <Image source={RubrikDansaMedOss} style={styles.rubrikDansaMedOss}></Image>
                         </View>
                         <View style={styles.containerColumn}>
-                            <Image source={DansaMedOssRebecca} style={styles.movieDansaMedOss} />
+                            <Image source={DansaMedOssBecca2} style={styles.movieDansaMedOss} />
                         </View>
                         <View>
                             <FetchMovies/>
