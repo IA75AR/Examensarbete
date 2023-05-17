@@ -45,7 +45,7 @@ export default function Fitness () {
                     <View style={styles.containerColumn}>
                         <Image source={KICKSTARTVit} style={styles.imageKICKSTART} />
                         <View style={styles.imageKICKSTART}>
-                            <Image source={Team1} style={styles.imageTeam1} />
+                            <Image source={Team1} style={styles.imageTeam1} accessibilityLabel="Team 1"/>
                         </View>
                         <View>
                             <Text style={styles.text1}>Behöver du en rejäl NYSTART & KICK vad gäller både din mentala som fysiska träning och hälsa? Hösten 2020 startade vi fitnesskoncepetet KICKSTART! Det blev succé med fulla team!</Text>
@@ -53,7 +53,7 @@ export default function Fitness () {
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageKICKSTART}>
-                            <Image source={VTT} style={styles.imageAlltFörHälsan} />
+                            <Image source={VTT} style={styles.imageAlltFörHälsan} accessibilityLabel="Träningspass"/>
                         </View>
                     </View>
                     <ListaKickstart/>
@@ -67,7 +67,7 @@ export default function Fitness () {
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageKICKSTART}>
-                            <Image source={Nominering} style={styles.imageNominering} />
+                            <Image source={Nominering} style={styles.imageNominering} accessibilityLabel="Nominering"/>
                         </View>
                     </View>
                     <View style={styles.containerColumn}>
@@ -78,7 +78,7 @@ export default function Fitness () {
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageKICKSTART}>
-                            <Image source={PeopleTräning} style={styles.imageAlltFörHälsan} />
+                            <Image source={PeopleTräning} style={styles.imageAlltFörHälsan} accessibilityLabel="Person som tränar" />
                         </View>
                     </View>
                     <View>
@@ -130,10 +130,10 @@ export default function Fitness () {
                         </View>
                         <View style={styles.medier}>
                             <Pressable onPress={handlePressLänkHemsidan}>
-                                <Image source={KICKSTART} style={styles.buttonKickstart}></Image>
+                                <Image source={KICKSTART} style={styles.buttonKickstart} accessibilityLabel="Logga KICKSTART!"></Image>
                             </Pressable>
                             <Pressable onPress={handlePressInsta}>
-                                <Image source={Instagram} style={styles.instagram}></Image>
+                                <Image source={Instagram} style={styles.instagram} accessibilityLabel="Instagram"></Image>
                             </Pressable>
                             <FontAwesome.Button 
                                 name="facebook-f" 
@@ -143,7 +143,7 @@ export default function Fitness () {
                         </View>
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} />
+                            <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} accessibilityLabel="Logga KICKSTART!" />
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> _________________________________</Text>

@@ -29,7 +29,7 @@ export default function ÅretsFöretagare () {
                 <ScrollView>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageÅretsFöretagare}>
-                            <Image source={AretsForetagare} style={styles.imageÅretsFöretagare} />
+                            <Image source={AretsForetagare} style={styles.imageÅretsFöretagare} accessibilityLabel="Årets Företagare"/>
                         </View>
                         <View>
                             <Text style={styles.text1}>År 2018 blev Ingela Arrbrant, grundaren av The House Dance Studio & Events AB, på Tjustgalan utnämnd till Årets Företagare med följande motivering:</Text>
@@ -38,13 +38,13 @@ export default function ÅretsFöretagare () {
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageBlommor}>
-                            <Image source={Blommor} style={styles.imageBlommor} />
+                            <Image source={Blommor} style={styles.imageBlommor} accessibilityLabel="Blommor"/>
                         </View>
                         <View style={styles.imageÅretsFöretagare}>
-                            <Image source={IngelaMarie} style={styles.imageBlommor} />
+                            <Image source={IngelaMarie} style={styles.imageBlommor} accessibilityLabel="Personer på gala"/>
                         </View>
                         <View style={styles.imageBlommor}>
-                            <Image source={Tjustgalan} style={styles.imageBlommor} />
+                            <Image source={Tjustgalan} style={styles.imageBlommor} accessibilityLabel="Tjustgalan" />
                         </View>
                     </View>
                     <View>
@@ -54,10 +54,10 @@ export default function ÅretsFöretagare () {
                         </View>
                         <View style={styles.medier}>
                             <Pressable onPress={handlePressLänkHemsidan}>
-                                <Image source={LoggaTHVit} style={styles.buttonTH}></Image>
+                                <Image source={LoggaTHVit} style={styles.buttonTH} accessibilityLabel="Logga The House"></Image>
                             </Pressable>
                             <Pressable onPress={handlePressInsta}>
-                                <Image source={Instagram} style={styles.instagram}></Image>
+                                <Image source={Instagram} style={styles.instagram} accessibilityLabel="Instagram"></Image>
                             </Pressable>
                             <FontAwesome.Button 
                                 name="facebook-f" 
@@ -67,7 +67,7 @@ export default function ÅretsFöretagare () {
                         </View>
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Image source={LoggaTHVit} style={styles.imageTHfooter} />
+                            <Image source={LoggaTHVit} style={styles.imageTHfooter} accessibilityLabel="Logga The House" />
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> _________________________________</Text>

@@ -36,7 +36,7 @@ export default function DansaMedOss () {
                             <Image source={RubrikDansaMedOss} style={styles.rubrikDansaMedOss}></Image>
                         </View>
                         <View style={styles.containerColumn}>
-                            <Image source={DansaMedOssBecca2} style={styles.movieDansaMedOss} />
+                            <Image source={DansaMedOssBecca2} style={styles.movieDansaMedOss} accessibilityLabel="Person som dansar" />
                         </View>
                         <View>
                             <FetchMovies/>
@@ -49,10 +49,10 @@ export default function DansaMedOss () {
                         </View>
                         <View style={styles.medier}>
                             <Pressable onPress={handlePressLänkHemsidan}>
-                                <Image source={LoggaTHVit} style={styles.buttonTH}></Image>
+                                <Image source={LoggaTHVit} style={styles.buttonTH} accessibilityLabel="Logga The House"></Image>
                             </Pressable>
                             <Pressable onPress={handlePressInsta}>
-                                <Image source={Instagram} style={styles.instagram}></Image>
+                                <Image source={Instagram} style={styles.instagram} accessibilityLabel="Instagram"></Image>
                             </Pressable>
                             <FontAwesome.Button 
                                 name="facebook-f" 
@@ -60,12 +60,12 @@ export default function DansaMedOss () {
                             >
                             </FontAwesome.Button>
                             <Pressable onPress={handlePressTiktok}>
-                                <Image source={Tiktok} style={styles.tiktok}></Image>
+                                <Image source={Tiktok} style={styles.tiktok} accessibilityLabel="TikTok"></Image>
                             </Pressable>
                         </View>
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} />
+                            <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} accessibilityLabel="Logga The House" />
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> ___________________________________</Text>

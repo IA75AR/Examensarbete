@@ -54,10 +54,10 @@ export default function Dansklasser () {
             <View style={styles.containerColumn}>
                 <ScrollView>
                     <View style={styles.containerColumn}>
-                        <Image source={LoggaTHVit} style={styles.imageLoggaTH} />
+                        <Image source={LoggaTHVit} style={styles.imageLoggaTH} accessibilityLabel="Logga The House" />
                     </View>
                     <View style={styles.imageLoggaTH}>
-                        <Image source={Dansare1} style={styles.imageDansare1} />
+                        <Image source={Dansare1} style={styles.imageDansare1} accessibilityLabel="Dansare"/>
                     </View>
                     <View style={styles.containerColumn}>
                         <Image source={RubrikDansklasser} style={styles.imageAnmälDigHär}></Image>
@@ -75,7 +75,7 @@ export default function Dansklasser () {
                         <Image source={LPRosa} style={styles.LP} />
                         <View style={styles.containerColumn}>
                             <View style={styles.imageKICKSTART}>
-                                <Image source={Dansare2} style={styles.imageDansare2} />
+                                <Image source={Dansare2} style={styles.imageDansare2} accessibilityLabel="Dansare" />
                             </View>
                         </View>
                         <Image source={LPOrange} style={styles.LP} />
@@ -84,7 +84,7 @@ export default function Dansklasser () {
                     <View>
                         <View style={styles.containerColumnText}>
                             <View style={styles.containerColumn}>
-                                <Image source={Sagovärlden} style={styles.ImageDansklasser} />
+                                <Image source={Sagovärlden} style={styles.ImageDansklasser} accessibilityLabel="Sagovärlden"/>
                             </View>
                             <Text style={styles.text2}>En dansklass för de allra minsta. Välkommen in i en sagovärld där vi på ett lekfullt sätt drömmer oss bort bland musiken, dansen och alla sagoböckerna. MNRI är viktigt för oss, det genomsyrar alla våra dansklasser. Våra älskade barn, hos oss är tryggheten viktig. #duäraldrigensam</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -93,7 +93,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Princess} style={styles.ImageDansklasser} />
+                                <Image source={Princess} style={styles.ImageDansklasser} accessibilityLabel="The House Princess" />
                             </View>
                             <Text style={styles.text2}>Älskar du att dansa och drömmer om att vara prinsessa för en dag? Välkommen till en dansklass där drömmar slår in, där du får glittra och skina som just DU kan!</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -102,7 +102,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={THK} style={styles.ImageDansklasser} />
+                                <Image source={THK} style={styles.ImageDansklasser} accessibilityLabel="The House Kids"/>
                             </View>
                             <Text style={styles.text2}>Välkommen till en klass där vi dansar loss till musiken och får testa på massor av olika stilar. En av våra absolut populäraste klasser!</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -111,7 +111,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Jazz79} style={styles.ImageDansklasser} />
+                                <Image source={Jazz79} style={styles.ImageDansklasser} accessibilityLabel="Jazz 7-9 år" />
                             </View>
                             <Text style={styles.text2}>På ett lekfullt sätt lär vi oss grunderna inom Jazzdans genom uppvärmning och koreografier. Med spralliga ben och leenden som smittar av sig shake:ar vi runt till grymma poplåtar!</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -120,7 +120,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Streetdance79} style={styles.ImageDansklasser} />
+                                <Image source={Streetdance79} style={styles.ImageDansklasser} accessibilityLabel="Streetdance 7-9 år" />
                             </View>
                             <Text style={styles.text2}>Varmt välkomna till en skön och energifylld dansklass där vi testar på coola steg från Streetdance-världen. Vi jobbar med låg tyngdpunkt och tillsammans får vi studion att gunga av dansglädje.</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -129,7 +129,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Jazz1012} style={styles.ImageDansklasser} />
+                                <Image source={Jazz1012} style={styles.ImageDansklasser} accessibilityLabel="Jazz 10-12 år" />
                             </View>
                             <Text style={styles.text2}>Varmt välkommen till en klass där vi till poppigare musik lär oss grunderna inom jazzdans, både vad gäller koreografi och teknik.</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -138,7 +138,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Streetdance1012} style={styles.ImageDansklasser} />
+                                <Image source={Streetdance1012} style={styles.ImageDansklasser} accessibilityLabel="Streetdance 10-12 år" />
                             </View>
                             <Text style={styles.text2}>Tillsammans dansar vi loss till cool och skön musik. Här lär oss grunderna inom Streetdance och Hip-Hop.</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -147,7 +147,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={TikTok1012} style={styles.ImageDansklasser} />
+                                <Image source={TikTok1012} style={styles.ImageDansklasser} accessibilityLabel="TikTok 10-12 år"/>
                             </View>
                             <Text style={styles.text2}>Älskar du att lära dig roliga TIK TOK-danser? Då vill du inte missa detta! Efter flera önskemål skapar nu The House sin alldeles EGNA version av TIK TOK-klass just på VÅRT sätt!</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -156,7 +156,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={Streetdance1317} style={styles.ImageDansklasser} />
+                                <Image source={Streetdance1317} style={styles.ImageDansklasser} accessibilityLabel="Streetdance 13-17+ år"/>
                             </View>
                             <Text style={styles.text2}>Skön klass till sköna människor! Här jobbar vi med låg tyngdpunkt och hittar DITT sätt att uttrycka dig. Under klassens gång jobbar vi med coola formationer, en grym gängkänsla och häftiga steg till epic music. </Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -165,7 +165,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={FeminineVibe} style={styles.ImageDansklasser} />
+                                <Image source={FeminineVibe} style={styles.ImageDansklasser} accessibilityLabel="Feminine Vibe 13-17+ år"/>
                             </View>
                             <Text style={styles.text2}>Come on girls, Beyoncé is in The House! Jazzfunk med det lilla extra, där vi dansar loss ordentligt och känner oss som riktiga queens!</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -174,7 +174,7 @@ export default function Dansklasser () {
                         </View>
                         <View>
                             <View style={styles.containerColumn}>
-                                <Image source={SYTYCD1317} style={styles.ImageDansklasser} />
+                                <Image source={SYTYCD1317} style={styles.ImageDansklasser} accessibilityLabel="SYTYCD 13-17+ år"/>
                             </View>
                             <Text style={styles.text2}>”Dance with your heart, and your body will follow” – Mia Michaels, från TV-programmet So You Think You Can Dance. Mjukt, milt, vackert och känslosamt. En variation av Lyrisk Jazz som blir innerlig och uttrycksfull.</Text>
                             <Text style={styles.text1}>FAKTA</Text>
@@ -189,10 +189,10 @@ export default function Dansklasser () {
                         </View>
                         <View style={styles.medier}>
                             <Pressable onPress={handlePressLänkHemsidan}>
-                                <Image source={LoggaTHVit} style={styles.buttonTH}></Image>
+                                <Image source={LoggaTHVit} style={styles.buttonTH} accessibilityLabel="Logga The House"></Image>
                             </Pressable>
                             <Pressable onPress={handlePressInsta}>
-                                <Image source={Instagram} style={styles.instagram}></Image>
+                                <Image source={Instagram} style={styles.instagram} accessibilityLabel="Instagram"></Image>
                             </Pressable>
                             <FontAwesome.Button 
                                 name="facebook-f" 
@@ -200,12 +200,12 @@ export default function Dansklasser () {
                             >
                             </FontAwesome.Button>
                             <Pressable onPress={handlePressTiktok}>
-                                <Image source={Tiktok} style={styles.tiktok}></Image>
+                                <Image source={Tiktok} style={styles.tiktok} accessibilityLabel="TikTok"></Image>
                             </Pressable>
                         </View>
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} />
+                            <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} accessibilityLabel="Logga The House"/>
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> _________________________________</Text>

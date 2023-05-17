@@ -30,7 +30,7 @@ export default function Event () {
                 <ScrollView>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageDavidLindgren}>
-                            <Image source={DavidLindgren} style={styles.imageDavidLindgren} />
+                            <Image source={DavidLindgren} style={styles.imageDavidLindgren} accessibilityLabel="David Lindgren"/>
                         </View>
                         <View>
                             <Text style={styles.text1}>Efter lång erfarenhet av att driva och producera event i Sverige och utomlands ser The House nu fram emot att göra samma sak här i Västervik. Företagsfester, galor, modeshower, stadsfestivaler, idrottsevenemang, happenings och föreställningar är några av de projekt som vi varit inblandade i tidigare.</Text>
@@ -44,7 +44,7 @@ export default function Event () {
                         </View>
                         <View style={styles.containerColumn}>
                             <View style={styles.imageBlommor}>
-                                <Image source={Sparbanksdagen} style={styles.imageBlommor} />
+                                <Image source={Sparbanksdagen} style={styles.imageBlommor} accessibilityLabel="Sparbanksdagen" />
                             </View>
                         </View>
                     </View>
@@ -55,10 +55,10 @@ export default function Event () {
                         </View>
                         <View style={styles.medier}>
                             <Pressable onPress={handlePressLänkHemsidan}>
-                                <Image source={LoggaTHVit} style={styles.buttonTH}></Image>
+                                <Image source={LoggaTHVit} style={styles.buttonTH} accessibilityLabel="Logga The House"></Image>
                             </Pressable>
                             <Pressable onPress={handlePressInsta}>
-                                <Image source={Instagram} style={styles.instagram}></Image>
+                                <Image source={Instagram} style={styles.instagram} accessibilityLabel="Instagram"></Image>
                             </Pressable>
                             <FontAwesome.Button 
                                 name="facebook-f" 
@@ -68,7 +68,7 @@ export default function Event () {
                         </View>
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
-                            <Image source={LoggaTHVit} style={styles.imageTHfooter} />
+                            <Image source={LoggaTHVit} style={styles.imageTHfooter} accessibilityLabel="Logga The House"/>
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
                         <Text style={styles.text1}> ________________________________</Text>
