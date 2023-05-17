@@ -91,12 +91,12 @@ const styles = StyleSheet.create({
         width: 250,
         height: 80,
         borderRadius: 10,
-        marginBottom: 30
+        marginBottom: 20
     }, imageGoBack: {
         width: 100,
         height: 40,
         borderRadius: 10,
-        marginTop: -100,
-        marginBottom: 90
+        marginTop: -40,
+        marginBottom: 50
     }
 });

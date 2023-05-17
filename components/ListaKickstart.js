@@ -6,7 +6,7 @@ export default function ListaKickstart () {
         <>
             <View style={styles.container}>
                 <Text style={styles.text1}>🔘   Härlig gruppträning!</Text> 
-                <Text style={styles.text1}>🔘   Schlagerpuls, Shake & Drum, Buggaloo m fl</Text> 
+                <Text style={styles.text1}>🔘   Schlagerpuls, Shake & Drum, Buggaloo mfl</Text> 
                 <Text style={styles.text1}>🔘   Effektiv styrka i gruppträning</Text> 
                 <Text style={styles.text1}>🔘   PT-timma</Text> 
                 <Text style={styles.text1}>🔘   Goodiebag</Text> 

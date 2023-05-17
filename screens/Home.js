@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         height: 200,
         width: 350
     }, version: {
-        marginTop: 100,
+        marginTop: 70,
         fontFamily: "Avenir"
     }
 });

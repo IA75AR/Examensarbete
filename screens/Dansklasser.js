@@ -82,7 +82,7 @@ export default function Dansklasser () {
                         <Image source={LPMint} style={styles.LP} />
                     </View>
                     <View>
-                        <View>
+                        <View style={styles.containerColumnText}>
                             <View style={styles.containerColumn}>
                                 <Image source={Sagovärlden} style={styles.ImageDansklasser} />
                             </View>
@@ -208,7 +208,7 @@ export default function Dansklasser () {
                             <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} />
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
-                        <Text style={styles.text1}> ___________________________________</Text>
+                        <Text style={styles.text1}> _________________________________</Text>
                     </View>
                 </ScrollView>
             </View>
@@ -223,6 +223,12 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "black"
+    }, containerColumnText: {
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "black",
     }, containerRow: {
         flex: 1,
         flexDirection: "row",
@@ -323,7 +329,8 @@ const styles = StyleSheet.create({
         color: "white",
         marginBottom: 20,
         marginLeft: 40,
-        marginRight: 35
+        marginRight: 35,
+        maxWidth: 500
     }, text3: {
         fontFamily: "Avenir",
         backgroundColor: "black",

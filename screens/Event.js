@@ -71,7 +71,7 @@ export default function Event () {
                             <Image source={LoggaTHVit} style={styles.imageTHfooter} />
                             <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
-                        <Text style={styles.text1}> _________________________________</Text>
+                        <Text style={styles.text1}> ________________________________</Text>
                     </View>
                 </ScrollView>
             </View>
