@@ -48,7 +48,7 @@ export default function ÅretsFöretagare () {
                         </View>
                     </View>
                     <View>
-                        <Text style={styles.text1}>________________________________</Text>
+                        <Text style={styles.text1}>__________________________________</Text>
                         <View>
                             <Text style={styles.text2}>Mer information och NYHETER finns på FB & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
                         </View>
@@ -68,9 +68,7 @@ export default function ÅretsFöretagare () {
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
                             <Image source={LoggaTHVit} style={styles.imageTHfooter} accessibilityLabel="Logga The House" />
-                            <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
-                        <Text style={styles.text1}> _________________________________</Text>
                     </View>
                 </ScrollView>
             </View>
@@ -153,7 +151,8 @@ const styles = StyleSheet.create({
         marginTop: 50,
         marginBottom: 30,
         marginLeft: 47,
-        marginRight: 35
+        marginRight: 35,
+        maxWidth: 370
     }, text2: {
         fontFamily: "Avenir",
         backgroundColor: "black",
@@ -161,12 +160,14 @@ const styles = StyleSheet.create({
         marginBottom: 40,
         marginLeft: 47,
         marginRight: 35,
-        marginTop: 20 
+        marginTop: 20,
+        maxWidth: 370
     }, medier: {
         flex: 1,
         flexDirection: "row",
         alignItems: "center",
-        marginLeft: 35,
+        justifyContent: "center",
+        marginLeft: 110,
         marginBottom: 20,
         maxWidth: 150,
         borderRadius: 10

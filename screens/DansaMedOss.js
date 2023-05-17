@@ -42,8 +42,8 @@ export default function DansaMedOss () {
                             <FetchMovies/>
                         </View>
                     </View>
-                    <View>
-                        <Text style={styles.text1}>________________________________</Text>
+                    <View style={styles.containerColumn}>
+                        <Text style={styles.text1}>__________________________________</Text>
                         <View>
                             <Text style={styles.text1}>Mer information på hemsida & följ oss gärna på:</Text>
                         </View>
@@ -66,9 +66,7 @@ export default function DansaMedOss () {
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
                             <Image source={LoggaTHVit} style={styles.imageLoggaTHFooter} accessibilityLabel="Logga The House" />
-                            <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
-                        <Text style={styles.text1}> ___________________________________</Text>
                     </View>
                  </ScrollView>
             </View>
@@ -82,7 +80,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "black"
+        backgroundColor: "black",
     }, text1: {
         fontFamily: "Avenir",
         fontSize: 18,
@@ -125,8 +123,8 @@ const styles = StyleSheet.create({
     }, medier: {
         flex: 1,
         flexDirection: "row",
+        justifyContent: "center",
         alignItems: "center",
-        marginLeft: 35,
         marginBottom: 20,
         maxWidth: 150
     }, imageLoggaTH: {

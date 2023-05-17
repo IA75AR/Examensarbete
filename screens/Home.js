@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, StyleSheet, Text, Pressable, Animated } from 'react-native';
+import { View, StyleSheet, Text, Pressable, Animated, Dimensions } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import KICKSTART from "../assets/KICKSTART/KICKSTART.png";
 import LoggaTHRosa from "../assets/theHouse/LoggaTHVit.png";
@@ -19,16 +19,15 @@ export default function Home () {
             Animated.sequence([
                 Animated.timing(animation, {
                     toValue: 1,
-                    duration: 2000,
+                    duration: 1600,
                     useNativeDriver: true,
                 }),
                 Animated.timing(animation, {
                     toValue: 0,
-                    duration: 2000,
+                    duration: 1600,
                     useNativeDriver: true,
                 }),
             ]),
-            { iterations: 100 }
         ).start();
     }, [animation]);
 
@@ -40,14 +39,14 @@ export default function Home () {
     const handleChangeScreenKI = () => {
         navigation.navigate("Fitness", { screen: {Fitness}})
     }
-  
+
     return (
         <>
             <View style={styles.container}>
                 <Pressable onPress={handleChangeScreenTH}>
                     <Animated.Image source={LoggaTHRosa} style={[styles.imageTH, { opacity: animation}]}/>
                 </Pressable>
-                <Text>_____________________________________</Text>
+                <Text style={styles.text1}>__________________________________</Text>
                 <Pressable onPress={handleChangeScreenKI}>
                     <Animated.Image source={KICKSTART} style={[styles.imageKICKSTART, { opacity: animation}]}/>
                 </Pressable>
@@ -57,6 +56,8 @@ export default function Home () {
         </>
     );
 };
+
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     container: {
@@ -72,8 +73,9 @@ const styles = StyleSheet.create({
         height: 200,
         width: 350
     }, version: {
-        marginTop: 70,
+        marginTop: width < 400 ? 70 : 160,
+        marginBottom: width < 400 ? -20 : -120,
         fontFamily: "Avenir"
-    }
+    }, 
 });
 

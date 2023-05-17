@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import Movies from '../models/Movies';
 
 export default function FetchMovies () {
@@ -23,6 +23,8 @@ export default function FetchMovies () {
   );
 };
 
+const { width, height } = Dimensions.get("window");
+
 const styles = StyleSheet.create({
   containerColumn: {
       flex: 1,
@@ -35,7 +37,8 @@ const styles = StyleSheet.create({
       color: "white",
       marginTop: 15,
       marginBottom: 20,
-      marginLeft: 39,
-      marginRight: 35
+      marginLeft: width > 400 ? 60 : 39,
+      marginRight: 35,
+      maxWidth: 420
   }
 });

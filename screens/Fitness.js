@@ -1,4 +1,4 @@
-import { StyleSheet, View, ScrollView, Text, Image, Pressable, Linking } from "react-native";
+import { StyleSheet, View, ScrollView, Text, Image, Pressable, Linking, Dimensions } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import KICKSTARTVit from "../assets/KICKSTART/KICKSTARTVit.png";
 import KICKSTART from "../assets/KICKSTART/KICKSTART.png";
@@ -74,7 +74,6 @@ export default function Fitness () {
                         <Image source={LPVit} style={styles.LP} />
                         <Image source={LPVit} style={styles.LP} />
                         <Image source={LPVit} style={styles.LP} />
-                        <Image source={LPVit} style={styles.LP} />
                     </View>
                     <View style={styles.containerColumn}>
                         <View style={styles.imageKICKSTART}>
@@ -124,7 +123,7 @@ export default function Fitness () {
                         </View>
                     </View>
                     <View>
-                        <Text style={styles.text1}>________________________________</Text>
+                        <Text style={styles.text1}>__________________________________</Text>
                         <View>
                             <Text style={styles.text2}>Mer information och NYHETER finns på FB & instagram @kickstart.shakeit. Mer information om fitnesskonceptet KICKSTART! finns på:</Text>
                         </View>
@@ -144,15 +143,15 @@ export default function Fitness () {
                         <Text style={styles.text1}>Telefon: 0733-114 114 @The House</Text>
                         <View style={styles.containerColumn}>
                             <Image source={KICKSTARTVit} style={styles.imageKICKSTARTFooter} accessibilityLabel="Logga KICKSTART!" />
-                            <Text style={styles.text2}>Copyright © The House Dance Studio & Events AB. All rights reserved.</Text>
                         </View>
-                        <Text style={styles.text1}> _________________________________</Text>
                     </View>
                 </ScrollView>
             </View>
         </>
     );
 };
+
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     containerColumn: {
@@ -273,7 +272,8 @@ const styles = StyleSheet.create({
         color: "white",
         marginBottom: 30,
         marginLeft: 39,
-        marginRight: 35
+        marginRight: 35,
+        maxWidth: 370
     }, text2: {
         fontFamily: "Avenir",
         backgroundColor: "black",
@@ -281,7 +281,8 @@ const styles = StyleSheet.create({
         marginBottom: 40,
         marginLeft: 40,
         marginRight: 35,
-        marginTop: 20 
+        marginTop: 20, 
+        maxWidth: 370
     }, text3: {
         fontFamily: "Avenir",
         backgroundColor: "white",
@@ -296,7 +297,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         alignItems: "center",
-        marginLeft: 35,
+        justifyContent: "center",
+        marginLeft: width > 400 ? 130 : 100,
         marginBottom: 20,
         maxWidth: 150,
         borderRadius: 10

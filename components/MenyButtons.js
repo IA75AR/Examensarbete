@@ -1,4 +1,4 @@
-import { StyleSheet, View, Pressable, Image } from "react-native";
+import { StyleSheet, View, Pressable, Image, Dimensions } from "react-native";
 import { useNavigation, CommonActions } from "@react-navigation/native";
 import DansaMedOss from "../screens/DansaMedOss";
 import Dansklasser from "../screens/Dansklasser";
@@ -73,6 +73,8 @@ export default function MenyButtons () {
     );
 };
 
+const { width, height } = Dimensions.get("window");
+
 const styles = StyleSheet.create({
     containerColumn: {
         flex: 1,
@@ -86,17 +88,17 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#ec008c",
-        marginBottom: -30,
+        marginBottom: -60
     }, buttonMeny: {
         width: 250,
         height: 80,
         borderRadius: 10,
-        marginBottom: 20
+        marginBottom: width < 400 ? 30 : 60,
     }, imageGoBack: {
         width: 100,
         height: 40,
         borderRadius: 10,
-        marginTop: -40,
-        marginBottom: 50
+        marginTop: width < 400 ? -100 : -170,
+        marginBottom: width < 400 ? 100 : 0,
     }
 });
